@@ -1,4 +1,5 @@
-import { typographyVariants } from "./TypographyVariants";
+import {typographyVariants} from "../theme/typographyVariants"
+
 
 export const breakpoints = {
   xs: 0,
