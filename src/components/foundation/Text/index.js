@@ -2,7 +2,7 @@ import React from "react";
 import styled , {css} from "styled-components";
 import PropTypes from "prop-types";
 
-export const TextStyleVariantMap = {
+export const TextStyleVariants = {
     smallestException: css`
         font-size: ${ ({theme}) => theme.typographyVariants.smallestException.fontSize };
         font-weight: ${ ({theme}) => theme.typographyVariants.smallestException.fontWeight };
@@ -18,7 +18,7 @@ export const TextStyleVariantMap = {
 
 
 const TextBase = styled.span`
-    ${ (props) => TextStyleVariantMap[props.variant] }
+    ${ (props) => TextStyleVariants[props.variant] }
 `;
 
 export default function Text({tag, variant, children}) {
